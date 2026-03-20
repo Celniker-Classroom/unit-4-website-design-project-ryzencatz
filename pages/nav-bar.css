@@ -1,5 +1,4 @@
-/* navigation stuff */
-/*.nav {
+.nav {
     display: flex;
     border: 2px solid pink;
     justify-content: space-between;
@@ -21,19 +20,4 @@
 }
 .right li {
     border: 2px solid black;
-} */
-
-body {
-    padding: 10px;
-    max-width: 1000px;
-    /* background-color: rgb(44, 44, 44);
-    color: white; */
 }
-a {
-    text-decoration: none;
-}
-.title, 
-.subtitle {
-    text-align: center;
-}
-
