@@ -23,16 +23,36 @@
     border: 2px solid black;
 } */
 
+.nav {
+    background-color: #eee;
+}
 body {
-    max-width: 750px;
     margin: 0 auto;
+    padding: 0;
     /* background-color: rgb(44, 44, 44);
     color: white; */
-}
+}   
 a {
     text-decoration: none;
 }
 .title, 
-.subtitle {
+.subtitle,
+.intro p {
     text-align: center;
+    color: white;
+}
+.intro p {
+    width: 750px;
+    font-family: monospace;
+    line-height: 23px;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./image/picture1-11.png);
+    background-size: cover;
+    background-position: center;
 }

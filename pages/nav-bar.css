@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 .nav {
     display: flex;
-    border: 2px solid pink;
     justify-content: space-between;
     padding: 0 12px;
     align-items: center;
+    background-color: black;
 }
 .home {
-    border: 2px solid black;
+    filter: invert();
     padding: 4px;
     width: 20px;
     height: 20px;
@@ -16,8 +18,22 @@
 .right {
     list-style-type: none;
     display: flex;
-    gap: 4px;
+    gap: 16px;
+    padding-right: 10px;
 }
-.right li {
-    border: 2px solid black;
+
+.right a{
+    color: white;
+    font-family: monospace;
+}
+
+
+
+/* centers the title and subtitle, which isn't really a part 
+of the nav bar but I'm too lazy to make another file and link 
+it to all of the pages. */
+.title, 
+.subtitle,
+.header p {
+    text-align: center;
 }
