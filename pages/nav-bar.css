@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Space Mono"); 
 
 .nav {
     display: flex;
     justify-content: space-between;
     padding: 0 12px;
     align-items: center;
-    background-color: black;
 }
 .home {
-    filter: invert();
     padding: 4px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50px;
 }
 
@@ -23,8 +22,8 @@
 }
 
 .right a{
-    color: white;
-    font-family: monospace;
+    font-size: 12px;
+    font-family: 'monospace';
 }
 
 
@@ -36,4 +35,5 @@ it to all of the pages. */
 .subtitle,
 .header p {
     text-align: center;
+    
 }

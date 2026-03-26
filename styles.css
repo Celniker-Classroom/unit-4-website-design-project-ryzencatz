@@ -24,7 +24,10 @@
 } */
 
 .nav {
-    background-color: #eee;
+    background-color: #171d38;
+}
+.right a{
+    color: white;
 }
 body {
     margin: 0 auto;
@@ -40,11 +43,21 @@ a {
 .intro p {
     text-align: center;
     color: white;
+    margin: 0 0;
+    padding: 0 0;
 }
 .intro p {
     width: 750px;
     font-family: monospace;
     line-height: 23px;
+    margin-top: 50px;
+}
+.title {
+    margin: 5px;
+    font-family: poppins;
+}
+.subtitle {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .intro {
     display: flex;
