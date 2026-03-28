@@ -56,32 +56,24 @@
 .sidebar {
     position: absolute;
     top: 25vh;
-    left: -400px;
+    left: -500px;
     width: 400px;
     height: 50vh;
     padding: 25px 0;
-
-    background-color: #0a0e1d;
-    
-    transition: left 0.4s ease;
+    background-color: #0e1126eb;
+    transition: left 0.6s ease;
+    box-shadow: 0px 0px 20px 6px #0e1126;
+    border-radius: 14px;
 }
 .sidebar .border-top,
 .sidebar .border-bottom {
     width: 350px;
     left: 25px;
     position: relative;
+    filter: brightness(2);
 }
 .sidebar .border-bottom {
     transform: rotate(180deg);
-}
-.sidebar a {
-    color: var(--text);
-    text-decoration: none;
-    
-    opacity: 0.8;
-    line-height: 10px;
-
-    transition: 0.5s ease;
 }
 .sidebar .links {
     text-align: center;
@@ -94,9 +86,18 @@
     font-size: 20px;
     font-family: allura;
 }
+.sidebar a {
+    color: var(--text);
+    text-decoration: none;
+    
+    opacity: 0.8;
+    line-height: 10px;
+
+    transition: 0.5s ease;
+}
 .sidebar a:hover {
     opacity: 1;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
 }
 .sidebar-tab {
     position: absolute;
