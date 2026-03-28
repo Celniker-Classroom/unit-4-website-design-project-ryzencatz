@@ -1,43 +1,137 @@
-/* :root {
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Space Mono"); 
+@import url('https://fonts.cdnfonts.com/css/allura');
+
+
+:root {
     --nav-bg-color: #171d38;
     --text: white;
     --text-two: #d3e2f6;
     --content-bg: #171b35;
 
     --intro-bg: url(./image/picture1-11.png);
-} */
+}
 
 
 
-/* navigation stuff */
-/*.nav {
+
+/* .nav {
     display: flex;
-    border: 2px solid pink;
     justify-content: space-between;
-    padding: 0 12px;
     align-items: center;
+    width: 100vh;
+    top: 0;
 }
 .home {
-    border: 2px solid black;
-    padding: 4px;
     width: 20px;
     height: 20px;
     border-radius: 50px;
+    filter: invert(1);
+    margin-left: 20px;
 }
 
 .right {
     list-style-type: none;
     display: flex;
-    gap: 4px;
+    gap: 16px;
+    margin-right: 20px;
 }
-.right li {
-    border: 2px solid black;
+
+.right a{
+    font-size: 12px;
+    font-family: "poppins";
+    transition: 0.6s;
+}
+.right a:hover {
+    letter-spacing: 1.5px;
 } */
+
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 3;
+}
+.sidebar {
+    position: absolute;
+    top: 25vh;
+    left: -400px;
+    width: 400px;
+    height: 50vh;
+    padding: 25px 0;
+
+    background-color: #0a0e1d;
+    
+    transition: left 0.4s ease;
+}
+.sidebar .border-top,
+.sidebar .border-bottom {
+    width: 350px;
+    left: 25px;
+    position: relative;
+}
+.sidebar .border-bottom {
+    transform: rotate(180deg);
+}
+.sidebar a {
+    color: var(--text);
+    text-decoration: none;
+    
+    opacity: 0.8;
+    line-height: 10px;
+
+    transition: 0.5s ease;
+}
+.sidebar .links {
+    text-align: center;
+    height: 37vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    font-family: allura;
+}
+.sidebar a:hover {
+    opacity: 1;
+    letter-spacing: 1px;
+}
+.sidebar-tab {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    filter: invert(1);
+    transform: rotate(-90deg);
+
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebar-container:hover .sidebar {
+    left: 0;
+    margin-left: 50px;
+}
+
+
+/* centers the title and subtitle, which isn't really a part 
+of the nav bar but I'm too lazy to make another file and link 
+it to all of the pages. */
+.title, 
+.subtitle,
+.header p {
+    text-align: center;
+}
 
 .nav {
     background-color: var(--nav-bg-color);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
-.right a{
+.right a {
     color: var(--text);
 }
 
@@ -69,12 +163,13 @@ p {
 }
 .title {
     margin: 5px;
-    font-family: poppins;
+    font-family: "poppins";
 }
 .subtitle {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "allura";
+    font-size: 15px;
 }
-.intro {
+/* .intro {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -84,7 +179,32 @@ p {
     background-image: var(--intro-bg);
     background-size: cover;
     background-position: center;
+}  */
+.intro {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+} 
+.bg-container {
+    height: 100vh;
+    background-image: var(--intro-bg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -1;
 }
+
 .scroll-arrow {
     position: absolute;
     bottom: 70px;   /* Distance from the bottom */
@@ -101,9 +221,13 @@ p {
 /* main body stuff */
 
 .main {
+    position: relative;
+    z-index: 1;
+    margin-top: 100vh;
+
     background-color: var(--content-bg);
     color: var(--text);
-    padding: 120px 200px 80px;
+    padding: 120px 30vh;
 }
 .section {
     margin: 0 auto;
