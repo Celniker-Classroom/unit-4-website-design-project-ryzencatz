@@ -1,39 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url("https://fonts.googleapis.com/css?family=Space Mono"); 
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 12px;
-    align-items: center;
+
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 3;
 }
-.home {
-    padding: 4px;
-    width: 25px;
-    height: 25px;
-    border-radius: 50px;
-    filter: invert(1);
+.sidebar {
+    position: absolute;
+    top: 25vh;
+    left: -500px;
+    width: 350px;
+    height: 50vh;
+    padding: 25px 0;
+    background-color: #0e1126eb;
+    transition: left 0.6s ease;
+    box-shadow: 0px 0px 42px 30px #0e1126;
+    border-radius: 30px;
 }
-
-.right {
-    list-style-type: none;
-    display: flex;
-    gap: 16px;
-    padding-right: 10px;
+.sidebar .border-top,
+.sidebar .border-bottom {
+    width: 300px;
+    left: 25px;
+    position: absolute;
+    filter: brightness(2);
 }
-
-.right a{
-    font-size: 12px;
-    font-family: 'monospace';
+.sidebar .border-bottom {
+    transform: rotate(180deg);
+    bottom: 15px;
 }
-
-
-
-/* centers the title and subtitle, which isn't really a part 
-of the nav bar but I'm too lazy to make another file and link 
-it to all of the pages. */
-.title, 
-.subtitle,
-.header p {
+.sidebar .links {
+    position: relative;
+    top: 17vh;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    font-family: allura;
+}
+.sidebar a {
+    color: var(--text);
+    text-decoration: none;
+    
+    opacity: 0.8;
+    line-height: 10px;
+
+    transition: 0.3s ease;
+}
+.sidebar .decoration {transition: 0.5s ease;}
+.sidebar a:hover .decoration {
+    opacity: 1;
+    letter-spacing: 3px;
+}
+.sidebar a:hover {
+    opacity: 1;
+    color: white;
+}
+.sidebar-tab {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 20px;
+    filter: invert(1);
+    transform: rotate(-90deg);
+
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebar-container:hover .sidebar {
+    left: 0;
+    margin-left: 50px;
 }
