@@ -14,32 +14,12 @@
 
 
 
-.title, 
-.subtitle,
-.header p {
-    text-align: center;
-}
-
-.nav {
-    background-color: var(--nav-bg-color);
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-}
-.right a {
-    color: var(--text);
-}
-
-
 body {
     margin: 0 auto;
     padding: 0;
     /* background-color: rgb(44, 44, 44);
     color: white; */
 }   
-a {
-    text-decoration: none;
-}
 .title, 
 .subtitle,
 .intro p {
@@ -63,6 +43,7 @@ p {
 .subtitle {
     font-family: "allura";
     font-size: 15px;
+    font-weight: 200;
 }
 /* .intro {
     position: relative;
