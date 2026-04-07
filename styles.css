@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Space Mono"); 
 @import url('https://fonts.cdnfonts.com/css/allura');
 
-
-/* :root {
+/* for homepage */
+/*:root {
     --nav-bg-color: #171d38;
     --text: white;
     --text-two: #d3e2f6;
@@ -14,11 +14,6 @@
 
 
 
-
-
-/* centers the title and subtitle, which isn't really a part 
-of the nav bar but I'm too lazy to make another file and link 
-it to all of the pages. */
 .title, 
 .subtitle,
 .header p {
