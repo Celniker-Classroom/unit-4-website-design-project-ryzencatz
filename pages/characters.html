@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
-      <div class="sidebar-container">
-        <div class="sidebar">
-          <img class="border-top" src="../image/fancy-border-1.png">
-          <div class="links">
-            <a href="../index.html"><span class="decoration">' * - .</span> Home <span class="decoration">. - * '</span></a>
-            <a href="./pages/team-info.html"><span class="decoration">' * - .</span> Team Info <span class="decoration">. - * '</span></a>
-            <a href="./pages/characters.html"><span class="decoration">' * - .</span> Characters <span class="decoration">. - * '</span></a>
-            <a href="./pages/places.html"><span class="decoration">' * - .</span> Places <span class="decoration">. - * '</span></a>
-            <a href="./pages/knight.html"><span class="decoration">' * - .</span> The Knight <span class="decoration">. - * '</span></a>
-          </div>
-          <img class="border-bottom" src="../image/fancy-border-1.png">
+
+    <div class="sidebar-container">
+      <img class="sidebar-tab" src="../image/down-arrow.png">
+      <div class="sidebar">
+        <img class="border-top" src="../image/fancy-border-1.png">
+        <div class="links">
+          <a href="../index.html"><span class="decoration">' * - .</span> Home <span class="decoration">. - * '</span></a>
+          <a href="./pages/team-info.html"><span class="decoration">' * - .</span> Team Info <span class="decoration">. - * '</span></a>
+          <a href="./pages/characters.html"><span class="decoration">' * - .</span> Characters <span class="decoration">. - * '</span></a>
+          <a href="./pages/places.html"><span class="decoration">' * - .</span> Places <span class="decoration">. - * '</span></a>
+          <a href="./pages/knight.html"><span class="decoration">' * - .</span> The Knight <span class="decoration">. - * '</span></a>
         </div>
-        <img class="sidebar-tab" src="../image/down-arrow.png"></div>
+        <img class="border-bottom" src="../image/fancy-border-1.png">
       </div>
+    </div>
     
     <div class="bg-container" style="filter: blur(5px); transform: scale(1.1);"></div>
     <div class="intro">
@@ -53,5 +54,13 @@
         <p>Yes, yes, there are many bosses (47, to be exact!) but I'm too lazy to list them here.</p>
       </div>
     </div>
+    
+    <script>
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'm') {
+          document.querySelector('.sidebar').classList.toggle('open');
+        }
+      });
+    </script>
   </body>
 </html>
