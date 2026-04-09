@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     height: 100vh;
-    z-index: 7;
+    z-index: 5;
 }
 .sidebar {
     opacity: 0;
@@ -27,7 +27,6 @@
     gap: 50px;
     align-items: center;
     transition: 0.3s;
-    z-index: 0;
 }
 .sidebar .border-top,
 .sidebar .border-bottom {
@@ -57,11 +56,13 @@
     transition: 0.3s ease;
 }
 .sidebar .decoration {transition: 0.5s ease;}
-.sidebar a:hover .decoration {
+.sidebar a:hover .decoration, 
+.sidebar a:focus .decoration {
     opacity: 1;
     letter-spacing: 3px;
 }
-.sidebar a:hover {
+.sidebar a:hover,
+.sidebar a:focus {
     opacity: 1;
     color: white;
 }
@@ -69,19 +70,17 @@
     position: absolute;
     top: 50%;
     left: 5px;
-    /* transform: translateY(-50%); */
     width: 20px;
-    /* filter: invert(1);
-    transform: rotate(-90deg); */
-    z-index: 80;
-    
-    border: 2px solid red;
-
+    filter: blur(100px);
+    transform: rotate(-90deg);
     padding: 10px;
     cursor: pointer;
+    z-index: 10;
 }
-.sidebar-tab:hover + .sidebar,
-.sidebar:hover {
+.sidebar-tab:hover + .sidebar {
     opacity: 1;
-    z-index: 1000;
+}
+
+.sidebar.open {
+    opacity: 1;
 }

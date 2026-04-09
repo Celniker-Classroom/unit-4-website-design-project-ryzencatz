@@ -15,7 +15,7 @@
   <body>
 
       <div class="sidebar-container">
-        <img class="sidebar-tab" src="./image/down-arrow.png"></div>
+        <img class="sidebar-tab" src="./image/down-arrow.png">
         <div class="sidebar">
           <img class="border-top" src="./image/fancy-border-1.png">
           <div class="links">
@@ -42,6 +42,7 @@
 
 
       <div class="main">
+        <em style="font-family: 'space mono'; display: block; font-weight: 100; text-align: center; position: relative; top: -30px; font-size: 10px;">( press <strong style="font-style: normal; font-size: 12px;">M</strong> to toggle menu )</em>
 
         <div class="section one">
           <h3>/ who made it? origin story?</h6>
@@ -54,5 +55,13 @@
         </div>
 
       </div>
+
+      <script>
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'm') {
+            document.querySelector('.sidebar').classList.toggle('open');
+          }
+        });
+      </script>
   </body>
 </html>
