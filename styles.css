@@ -105,15 +105,98 @@ p {
     color: var(--text);
     padding: 120px 30vh;
 }
-.section {
-    margin: 0 auto;
-    padding: 15px 0;
-}
-.section p {
-    padding-left: 20px;
-    color: var(--text-two);
-}
-h3 {
+
+
+.section .accordion {
     font-family: 'Poppins';
     font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.section .panel {
+    color: var(--text-two);
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    opacity: 0;
+}
+.section .dash {
+    display: inline-block; 
+    opacity: 0;
+    transform: translateX(-15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.section.active .panel {
+    max-height: 200px;
+    opacity: 1;
+    padding-left: 40px;
+}
+.section.active .dash {
+    opacity: 1;
+    transform: translateX(0);
+}
+.section.active .accordion {
+    transform: translateX(7px);
+}
+
+
+/* form stuff */
+/* button for opening the chat */
+.open-button {
+    position: fixed;
+    right: 28px;
+    bottom: 23px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-family: "poppins";
+    box-sizing: border-box;
+    background-color: #48577b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 10;
+    bottom: 23px;
+    transition: 0.3s ease;
+}
+.open-button:hover {opacity: 1;}
+
+/* the popup */
+.form-container {
+    position: fixed;
+    right: 28px;
+    width: 300px;
+    bottom: 23px;
+    display: none;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 11;
+    padding: 20px 10px 10px;
+    background-color: white;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-container button,
+.form-container textarea {
+    background-color: #dcdcdc;
+    border: none;
+    height: 50px;
+}
+.form-container textarea {
+    line-height: 17px;
+    padding: 10px;
+    font-family: monospace;
+    height: 100px;
+}
+.form-container label {
+    font-family: "poppins";
+    font-weight: 100;
+}
+.form-container button {
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+.form-container button:hover {
+    opacity: 1;
 }

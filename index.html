@@ -45,15 +45,25 @@
         <em style="font-family: 'space mono'; display: block; font-weight: 100; text-align: center; position: relative; top: -30px; font-size: 10px;">( press <strong style="font-style: normal; font-size: 12px;">M</strong> to toggle menu )</em>
 
         <div class="section one">
-          <h3>/ who made it? origin story?</h6>
-          <p>Hollow Knight was created by Team Cherry, a small Australian indie studio founded by Ari Gibson and William Pellen, originating from a 2013 "Ludum Dare" game jam theme, "Beneath the Surface". Originally conceived as a smaller game called Hungry Knight, the project grew into a sprawling 2D "Metroidvania" funded by a successful 2014 Kickstarter, officially launching in February 2017. This fascinating game tells the story of a ruined kingdom, Hallownest, plagued by a mental infection caused by an ancient god, the Radiance. To save his kingdom, the Pale King created Vessels—children born of Void and raised in the Abyss—to contain the plague. The chosen "Hollow Knight" failed to hold the infection due to an instilled emotional weakness, leading to the game's events. </p>
+          <h3 class="accordion"><span class="dash">/</span> who made it? origin story?</h6>
+          <p class="panel">Hollow Knight was created by Team Cherry, a small Australian indie studio founded by Ari Gibson and William Pellen, originating from a 2013 "Ludum Dare" game jam theme, "Beneath the Surface". Originally conceived as a smaller game called Hungry Knight, the project grew into a sprawling 2D "Metroidvania" funded by a successful 2014 Kickstarter, officially launching in February 2017. This fascinating game tells the story of a ruined kingdom, Hallownest, plagued by a mental infection caused by an ancient god, the Radiance. To save his kingdom, the Pale King created Vessels—children born of Void and raised in the Abyss—to contain the plague. The chosen "Hollow Knight" failed to hold the infection due to an instilled emotional weakness, leading to the game's events. </p>
         </div>
 
         <div class="section two">
-          <h3>/ characters?</h6>
-          <p>Well, obviously, there’s the Knight. There’s also The Dreamers, Hornet, and numerous other creatures found in the game, such as the False Knight, the Mantis Lords, etc. Hornet is the protector of Hallownest and daughter of Herrah and the Pale King. She guides and challenges the Knight, seeking a better way to save the kingdom. Quirrel is a curious traveler associated with Monomon the Teacher. He assists the Knight in exploring Hallownest.Elderbug is the friendly, nostalgic first NPC in Dirtmouth who provides advice. Cornifer and Iselda are cartographers who map the dangerous areas, providing essential guidance. Zote the Mighty is a delusional, arrogant character who claims to be a great warrior but is weak and comedic.</p>
+          <h3 class="accordion"><span class="dash">/</span> characters?</h6>
+          <p class="panel">Well, obviously, there’s the Knight. There’s also The Dreamers, Hornet, and numerous other creatures found in the game, such as the False Knight, the Mantis Lords, etc. Hornet is the protector of Hallownest and daughter of Herrah and the Pale King. She guides and challenges the Knight, seeking a better way to save the kingdom. Quirrel is a curious traveler associated with Monomon the Teacher. He assists the Knight in exploring Hallownest.Elderbug is the friendly, nostalgic first NPC in Dirtmouth who provides advice. Cornifer and Iselda are cartographers who map the dangerous areas, providing essential guidance. Zote the Mighty is a delusional, arrogant character who claims to be a great warrior but is weak and comedic.</p>
         </div>
 
+      </div>
+      <div class="form-popup">
+        <button onclick="openForm()" class="open-button">Chat</button>
+        <form class="form-container" id="myForm">
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Type here..." name="msg" required></textarea>
+          
+          <button type="submit">Send</button>
+          <button type="button" onclick="closeForm()">Close</button>
+        </form>
       </div>
 
       <script>
@@ -62,6 +72,15 @@
             document.querySelector('.sidebar').classList.toggle('open');
           }
         });
+
+        function openForm() {
+            document.getElementById("myForm").style.display = "flex";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
       </script>
+      <script src="./script.js"></script>
   </body>
 </html>
