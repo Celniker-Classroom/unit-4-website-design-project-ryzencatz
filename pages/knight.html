@@ -6,22 +6,45 @@
     
   </head>
   <body>
-    <div class="nav">
-      <a href="../index.html"><img class="home" src="../image/home-icon.png" width="20"></a>
-      <ol class="right">
-        <li><a href="../pages/team-info.html">Team Info</a></li>
-        <li><a href="../pages/characters.html">Characters</a></li>
-        <li><a href="../pages/places.html">Places</a></li>
-        <li><a href="../pages/knight.html">The Knight</a></li>
-      </ul>
+    <div class="sidebar-container">
+      <img class="sidebar-tab" src="../image/down-arrow.png">
+      <div class="sidebar">
+        <a href="https://www.amazon.com/Collectible-Figurine-Dashboard-Ornament-Enthusiasts/dp/B0G4PYX14M/ref=sr_1_4?crid=39XJYCRXN0AR8&dib=eyJ2IjoiMSJ9.vobtpZqGxgeAGPiJEDZTRxhtoVfrGuQDjaLazuVcrbTyraEFBMJDZRcjXqo1hci9STXduOhhVYolq2DJUIT2q4oQXahG1xmLQwfmehCYnbTq1OudfftYYvDbPFotQRn2tJcSl55C6ygjjwUFfnNLV-D0-cSqE0hZHJLMmR1Cm3_vESspqFBCReLwF3Gy4q9XKyeYRx3bGYBLr0FdHn6Y4VjnpQ1P-KeuT0IcmSYS9uY.gTM-_yRxUqaTl7H5skZaS04bZxBdgSI-R4vNElIzinA&dib_tag=se&keywords=hollow%2Bknight&qid=1776353691&sprefix=hollow%2Bknight%2Caps%2C181&sr=8-4&th=1" rel="noreferrer noopener"><img class="border-top" src="./image/fancy-border-1.png"></a>
+        <div class="links">
+          <a href="../index.html"><span class="decoration">' * - .</span> Home <span class="decoration">. - * '</span></a>
+          <a href="../pages/team-info.html"><span class="decoration">' * - .</span> Team Info <span class="decoration">. - * '</span></a>
+          <a href="../pages/characters.html"><span class="decoration">' * - .</span> Characters <span class="decoration">. - * '</span></a>
+          <a href="../pages/places.html"><span class="decoration">' * - .</span> Places <span class="decoration">. - * '</span></a>
+          <a href="../pages/knight.html"><span class="decoration">' * - .</span> The Knight <span class="decoration">. - * '</span></a>
+        </div>
+        <img class="border-bottom" src="../image/fancy-border-1.png">
+      </div>
     </div>
+
+    <div class="bg-container"></div>
 
     <div class="intro">
       <h1 class="title">The Knight</h1>
       <h6 class="subtitle">The savior.<br>The hero.</h6>
       <p>The Knight from Hollow Knight is a silent, enigmatic wanderer who emerges from the shadows to explore the fallen kingdom of Hallownest. Small and unassuming in appearance, it wields a nail as both weapon and tool, carving a path through haunting ruins filled with forgotten lore and lingering corruption. Despite its lack of voice or overt emotion, the Knight’s journey reveals a quiet resilience and purpose tied deeply to the kingdom’s fate. As it descend further into darkness, it uncovers truths about sacrifice, identity, and the fragile boundary between containment and ruin.
       </p>
-  </div>
+    </div>
 
+    <script>
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'm') {
+          document.querySelector('.sidebar').classList.toggle('open');
+        }
+      });
+
+      function openForm() {
+          document.getElementById("myForm").style.display = "flex";
+      }
+
+      function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
