@@ -129,9 +129,6 @@ h3 {
 }
 
 /* table stuff for places.html */
-.section table {
-    margin: 25px auto;
-}
 .section table th {
     font-family: "poppins";
     padding: 10px 30px;
@@ -146,4 +143,14 @@ h3 {
 .section table .rr,
 .section table .nr {
     border-right: 1px solid white;
+}
+.container {
+    margin-top: 25px;
+    margin-left: 20px;
+    gap: 25px;
+}
+.container img {
+    float: left;
+    margin-right: 30px;
+    border-radius: 5px;
 }
