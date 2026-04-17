@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Space Mono"); 
+@import url('https://fonts.cdnfonts.com/css/allura');
+
+/* for homepage */
+/*:root {
+    --nav-bg-color: #171d38;
+    --text: white;
+    --text-two: #d3e2f6;
+    --content-bg: #171b35;
+
+    --intro-bg: url(./image/picture1-11.png);
+} */
+
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    /* background-color: rgb(44, 44, 44);
+    color: white; */
+}
+.title, 
+.subtitle,
+.intro p {
+    text-align: center;
+    color: var(--text);
+    margin: 0 0;
+    padding: 0 0;
+}
+.intro p {
+    width: 750px;
+    margin-top: 50px;
+}
+p {
+    font-family: monospace;
+    line-height: 23px;
+}
+.title {
+    margin: 5px;
+    font-family: "poppins";
+}
+.subtitle {
+    font-family: "allura";
+    font-size: 15px;
+    font-weight: 200;
+}
+/* .intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--intro-bg);
+    background-size: cover;
+    background-position: center;
+}  */
+.intro {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+} 
+.bg-container {
+    height: 100vh;
+    background-image: var(--intro-bg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 70px;   
+    left: 50%;
+    transform: translateX(-50%); 
+    filter: invert(1);
+    transition: 0.5s;
+}
+.scroll-arrow:hover {
+    bottom: 65px;
+}
+
+
+/* main body stuff */
+
+.main {
+    position: relative;
+    z-index: 1;
+    margin-top: 100vh;
+
+    background-color: var(--content-bg);
+    color: var(--text);
+    padding: 120px 30vh;
+}
+.section {
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.section p {
+    padding-left: 20px;
+    color: var(--text-two);
+}
+h3 {
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+.section input {
+    margin: 0 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--text-two);
+    border: 2px solid var(--text-two);
+    padding: 3px 6px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+/* table stuff for places.html */
+.section table {
+    margin: 25px auto;
+}
+.section table th {
+    font-family: "poppins";
+    padding: 10px 30px;
+    border-bottom: 1px solid white;
+}
+.section table td {
+    font-family: monospace;
+    opacity: 0.8;
+    padding: 7px 30px;
+    text-align: center;
+}
+.section table .rr,
+.section table .nr {
+    border-right: 1px solid white;
+}
