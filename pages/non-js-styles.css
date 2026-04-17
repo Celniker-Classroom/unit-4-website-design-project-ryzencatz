@@ -154,3 +154,7 @@ h3 {
     margin-right: 30px;
     border-radius: 5px;
 }
+.question {
+    clear: both;
+    margin-top: 40px;
+}
