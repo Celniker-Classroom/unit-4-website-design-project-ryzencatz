@@ -2,24 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Space Mono"); 
 @import url('https://fonts.cdnfonts.com/css/allura');
 
-/* for homepage */
-/*:root {
-    --nav-bg-color: #171d38;
-    --text: white;
-    --text-two: #d3e2f6;
-    --content-bg: #171b35;
-
-    --intro-bg: url(./image/picture1-11.png);
-} */
-
-
-
+/* base styles */
 body {
     margin: 0 auto;
     padding: 0;
     /* background-color: rgb(44, 44, 44);
     color: white; */
 }   
+
+/* intro styles */
 .title, 
 .subtitle,
 .intro p {
@@ -32,7 +23,7 @@ body {
     width: 750px;
     margin-top: 50px;
 }
-p {
+p, ul, ol {
     font-family: monospace;
     line-height: 23px;
 }
@@ -45,17 +36,6 @@ p {
     font-size: 15px;
     font-weight: 200;
 }
-/* .intro {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background-image: var(--intro-bg);
-    background-size: cover;
-    background-position: center;
-}  */
 .intro {
     position: fixed;
     height: 100vh;
@@ -80,7 +60,6 @@ p {
     top: 0;
     z-index: -1;
 }
-
 .scroll-arrow {
     position: absolute;
     bottom: 70px;   
@@ -94,8 +73,7 @@ p {
 }
 
 
-/* main body stuff */
-
+/* main section styles */
 .main {
     position: relative;
     z-index: 1;
@@ -105,8 +83,6 @@ p {
     color: var(--text);
     padding: 120px 30vh;
 }
-
-
 .section .accordion {
     font-family: 'Poppins';
     font-size: 18px;
@@ -128,7 +104,7 @@ p {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .section.active .panel {
-    max-height: 200px;
+    max-height: 2000px;
     opacity: 1;
     padding-left: 40px;
 }
@@ -141,7 +117,7 @@ p {
 }
 
 
-/************** form stuff **************/
+/* form styles */
 /* button for opening the chat */
 .open-button {
     position: fixed;
@@ -161,7 +137,6 @@ p {
     transition: 0.3s ease;
 }
 .open-button:hover {opacity: 1;}
-
 /* the popup */
 .form-container {
     position: fixed;
