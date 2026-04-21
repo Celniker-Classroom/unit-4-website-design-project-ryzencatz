@@ -1,45 +1,120 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My CSF Home Page</title>
-    <link rel="stylesheet" href="../pages/nav-bar.css">
+<html style="
+    --text: white;
+    --text-two: #ffffffc2;
+    --content-bg: #222222;
+    --intro-bg: url(../image/gloomy-wallpaper.jpg);
+"><head>
+    <title>Places</title>
+    <link rel="stylesheet" href="./nav-bar.css">
+    <!-- <link rel="stylesheet" href="../styles.css"> -->
+    <link rel="stylesheet" href="./non-js-styles.css">
+    <style>
+      /* styles specific for the images at the bottom */
+      .img-grid {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .img-grid img {
+        width: 175px;
+        padding: 10px;
+        filter: grayscale(100%); 
+        opacity: 0.8;
+        transition: 0.2s;
+      }
+      .img-grid img:hover {
+        transform: scale(1.23);
+        opacity: 1;
+        filter: grayscale(0%);
+      }
+    </style>
   </head>
   <body>
-    <div class="nav">
-      <a href="../index.html"><img class="home" src="../image/home-icon.png" width="20"></a>
-      <ol class="right">
-        <li><a href="../pages/team-info.html">Team Info</a></li>
-        <li><a href="../pages/characters.html">Characters</a></li>
-        <li><a href="../pages/places.html">Places</a></li>
-        <li><a href="../pages/knight.html">The Knight</a></li>
-      </ul>
+    <div class="sidebar-container">
+      <img class="sidebar-tab" src="../image/down-arrow.png">
+      <div class="sidebar">
+        <img class="border-top" src="../image/fancy-border-1.png">
+        <div class="links">
+          <a href="../index.html"><span class="decoration">' * - .</span> Home <span class="decoration">. - * '</span></a>
+          <a href="../pages/team-info.html"><span class="decoration">' * - .</span> Team Info <span class="decoration">. - * '</span></a>
+          <a href="../pages/characters.html"><span class="decoration">' * - .</span> Characters <span class="decoration">. - * '</span></a>
+          <a href="../pages/places.html"><span class="decoration">' * - .</span> Places <span class="decoration">. - * '</span></a>
+          <a href="../pages/knight.html"><span class="decoration">' * - .</span> The Knight <span class="decoration">. - * '</span></a>
+        </div>
+        <img class="border-bottom" src="../image/fancy-border-1.png">
+      </div>
     </div>
 
+    <div class="bg-container" style="filter: blur(1px); transform: scale(1.1);"></div>
     <div class="intro">
       <h1 class="title">The Team</h1>
-      <h6 class="subtitle">the masterminds behind the game</h6>
-      <p>Originally created for a game jam, the three never expected Hollow Knight to have such success. 
+      <h6 class="subtitle">the masterminds</h6>
+      <p>The journey of Team Cherry began with a humble prototype originally created for a game jam, where the trio of Ari Gibson, William Pellen, and Christopher Larkin first collaborated. At the time, they never expected Hollow Knight to reach such heights of success; however, their small project quickly evolved into a massive cultural phenomenon. This unexpected transition from a time-limited creative challenge to a global indie masterpiece serves as the foundation for the studio’s legacy, proving that their combined vision resonated far more deeply with players than they had ever imagined.
       </p>
+      <img class="scroll-arrow" src="../image/down-arrow.png" width="20px">
     </div>
 
-    <div>
-      <div>
+    <div class="main">
+      <div class="section one">
         <h3>/ who?</h3>   
-        <p>Team Cherry! (aka Ari Gibson and William Pellen, with Christopher Larkin as the music person).</p> 
-        <img src="../image/cherry-icon.png">
+        <p>Team Cherry! (aka Ari Gibson and William Pellen, with Christopher Larkin as the music person). Founded in 2014, Team Cherry is a small indie studio based in Adelaide, Australia, primarily led by co-directors Ari Gibson and William Pellen. The duo rose to prominence with their critically acclaimed debut, Hollow Knight, a challenging "Metroidvania" adventure that grew from a modest Kickstarter project into a global success. While Gibson handles the game's distinctive hand-drawn art and animation, Pellen focuses on game design and complex enemy behaviors. They are joined by lead composer Christopher Larkin, whose hauntingly atmospheric orchestral scores and sound design are often cited as a defining element of the game’s immersive world. The trio continues to work together on the highly anticipated sequel, Hollow Knight: Silksong.</p> 
       </div>
-      <div>
+      <div class="section two">
         <h3>/ who??</h3>
-        <h4>// Ari Gibson.</h4> 
-        <p>Ari Nicholas Gibson is an 42-year-old Australian artist, animator, and video game designer who worked on the art and animation in Hollow Knight and its sequel, Silksong.</p>
+        <div class="subsection">
+          <h4>Ari Gibson</h4> 
+          <p>Ari Nicholas Gibson is a 42-year-old Australian artist, animator, and video game designer who serves as a cornerstone of the indie studio Team Cherry. He is best known for his pivotal role in creating the visual identity of the critically acclaimed Hollow Knight and its upcoming sequel, Hollow Knight: Silksong. Gibson’s signature style—characterized by fluid, hand-drawn 2D animations and moody, intricate environments—has been widely praised for bringing the desolate yet beautiful world of Hallownest to life. His ability to blend traditional animation techniques with modern game design continues to be a driving force behind the series' enduring aesthetic appeal..</p>
+        </div>
 
-        <h4>// William Pellen</h4>
-        <p>William Pellen is also Australian and he's a video game designer and former web designer. Like Gibson, he's famous for his work on Hollow Knight and Silksong. He's also the co-founder and co-director of Team Cherry.</p>
+        <div class="subsection">
+          <h4>William Pellen</h4>
+          <p>William Pellen, an Australian video game designer and former web designer, is the co-founder and co-director of Team Cherry alongside Ari Gibson. He is most famous for his leadership and design work on the breakout hit Hollow Knight and its sequel, Hollow Knight: Silksong. Bringing a background in web design to the studio, Pellen focuses heavily on the technical and mechanical aspects of development, including level design and the intricate behaviors of the games' many bosses. Together with Gibson, he has successfully steered Team Cherry from a small indie startup into one of the most respected names in the genre.</p>
+        </div>
 
-        <h4>Christopher Larkin</h4>
-        <p>Christopher James Larkin once again is Australian. He's a composer for vide games, film, and television, also best known for his work on Hollow Knight and Silksong. He laso made music for Pac-Man 256, Outfolded, and other things.</p>
+        <div class="subsection">
+          <h4>Christopher Larkin</h4>
+          <p>Christopher James Larkin is a versatile Australian composer whose evocative scores for video games, film, and television have earned him international acclaim. He is best known for his work on Hollow Knight and its upcoming sequel, Hollow Knight: Silksong, where his haunting orchestral compositions became a fundamental part of the series' identity. Beyond his collaboration with Team Cherry, Larkin has showcased his range by creating music for diverse projects such as Pac-Man 256 and Outfolded. His ability to craft immersive soundscapes across various genres has established him as a premier talent in the Australian creative industry.</p>
+        </div>
       </div>
 
+<div class="img-grid">
+          <a href="https://www.youtube.com/watch?v=G1atkq4C1KU"><img src="../image/ascended.PNG" alt="ascended bug"></a>
+          <img src="../image/bench.PNG" alt="two little bugs sitting on a bench">
+          <img src="../image/chubby.PNG" alt="chubby bug">
+          <img src="../image/elderbug.PNG" alt="old bug called elderbug">
+          <img src="../image/floating-blob.PNG" alt="a floating robot like bug">
+          <img src="../image/flying-grandpa.PNG" alt="an old grandpa bug thats angry and flying">
+          <img src="../image/grandpa-attach.PNG" alt="an old grandpa bug attacking">
+          <img src="../image/grumpy.PNG" alt="a very very grumpy bug">
+          <img src="../image/hornet.PNG" alt="an ordinary image of hornet">
+          <img src="../image/hornet-majestic.PNG" alt="an extraordinary image of hornet">
+          <img src="../image/knight.PNG" alt="an image of the incredible knight">
+          <img src="../image/mantis.PNG" alt="the valiant mantis lords">
+          <img src="../image/shade.PNG" alt="image of the knight's shade">
+          <img src="../image/sleepy.PNG" alt="sleepy bug">
+          <img src="../image/spiky.PNG" alt="spiky mean ice bug">
+          <img src="../image/white.PNG" alt="a white bug">
+          <img src="../image/grandpa-attach.PNG" alt="an old grandpa bug attacking">
+          <img src="../image/grumpy.PNG" alt="a very very grumpy bug">
+          <img src="../image/hornet.PNG" alt="an ordinary image of hornet">
+          <img src="../image/hornet-majestic.PNG" alt="an extraordinary image of hornet">
+          <img src="../image/knight.PNG" alt="an image of the incredible knight">
+          <img src="../image/mantis.PNG" alt="the valiant mantis lords">
+          <img src="../image/bench.PNG" alt="two little bugs sitting on a bench">
+          <img src="../image/chubby.PNG" alt="chubby bug">
+        </div>
+        <p style="text-align: center; margin-top: 30px;">(ignore how some images are repeated)</p>
+      </div>
     </div>
+
+    <script>
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'm') {
+          document.querySelector('.sidebar').classList.toggle('open');
+        }
+      });
+    </script>
   </body>
 </html>
