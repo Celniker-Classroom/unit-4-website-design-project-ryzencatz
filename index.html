@@ -11,92 +11,141 @@
     <title>Hollow Knight</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./pages/nav-bar.css">
+    <style>
+      /* styles specific for the images at the bottom */
+      .img-grid {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .img-grid img {
+        width: 175px;
+        padding: 10px;
+        filter: grayscale(100%); 
+        opacity: 0.8;
+        transition: 0.2s;
+      }
+      .img-grid img:hover {
+        transform: scale(1.23);
+        opacity: 1;
+        filter: grayscale(0%);
+      }
+    </style>
   </head>
   <body>
-
-      <div class="sidebar-container">
-        <img class="sidebar-tab" src="./image/down-arrow.png">
-        <div class="sidebar">
-          <a href="https://www.amazon.com/Collectible-Figurine-Dashboard-Ornament-Enthusiasts/dp/B0G4PYX14M/ref=sr_1_4?crid=39XJYCRXN0AR8&dib=eyJ2IjoiMSJ9.vobtpZqGxgeAGPiJEDZTRxhtoVfrGuQDjaLazuVcrbTyraEFBMJDZRcjXqo1hci9STXduOhhVYolq2DJUIT2q4oQXahG1xmLQwfmehCYnbTq1OudfftYYvDbPFotQRn2tJcSl55C6ygjjwUFfnNLV-D0-cSqE0hZHJLMmR1Cm3_vESspqFBCReLwF3Gy4q9XKyeYRx3bGYBLr0FdHn6Y4VjnpQ1P-KeuT0IcmSYS9uY.gTM-_yRxUqaTl7H5skZaS04bZxBdgSI-R4vNElIzinA&dib_tag=se&keywords=hollow%2Bknight&qid=1776353691&sprefix=hollow%2Bknight%2Caps%2C181&sr=8-4&th=1" rel="noreferrer noopener"><img class="border-top" src="./image/fancy-border-1.png"></a>
-          <div class="links">
-            <a href="./index.html"><span class="decoration">' * - .</span> Home <span class="decoration">. - * '</span></a>
-            <a href="./pages/team-info.html"><span class="decoration">' * - .</span> Team Info <span class="decoration">. - * '</span></a>
-            <a href="./pages/characters.html"><span class="decoration">' * - .</span> Characters <span class="decoration">. - * '</span></a>
-            <a href="./pages/places.html"><span class="decoration">' * - .</span> Places <span class="decoration">. - * '</span></a>
-            <a href="./pages/knight.html"><span class="decoration">' * - .</span> The Knight <span class="decoration">. - * '</span></a>
-          </div>
-          <img class="border-bottom" src="./image/fancy-border-1.png">
+    <div class="sidebar-container">
+      <img class="sidebar-tab" src="./image/down-arrow.png">
+      <div class="sidebar">
+        <a href="https://www.amazon.com/Collectible-Figurine-Dashboard-Ornament-Enthusiasts/dp/B0G4PYX14M/ref=sr_1_4?crid=39XJYCRXN0AR8&dib=eyJ2IjoiMSJ9.vobtpZqGxgeAGPiJEDZTRxhtoVfrGuQDjaLazuVcrbTyraEFBMJDZRcjXqo1hci9STXduOhhVYolq2DJUIT2q4oQXahG1xmLQwfmehCYnbTq1OudfftYYvDbPFotQRn2tJcSl55C6ygjjwUFfnNLV-D0-cSqE0hZHJLMmR1Cm3_vESspqFBCReLwF3Gy4q9XKyeYRx3bGYBLr0FdHn6Y4VjnpQ1P-KeuT0IcmSYS9uY.gTM-_yRxUqaTl7H5skZaS04bZxBdgSI-R4vNElIzinA&dib_tag=se&keywords=hollow%2Bknight&qid=1776353691&sprefix=hollow%2Bknight%2Caps%2C181&sr=8-4&th=1" rel="noreferrer noopener"><img class="border-top" src="./image/fancy-border-1.png"></a>
+        <div class="links">
+          <a href="./index.html"><span class="decoration">' * - .</span> Home <span class="decoration">. - * '</span></a>
+          <a href="./pages/team-info.html"><span class="decoration">' * - .</span> Team Info <span class="decoration">. - * '</span></a>
+          <a href="./pages/characters.html"><span class="decoration">' * - .</span> Characters <span class="decoration">. - * '</span></a>
+          <a href="./pages/places.html"><span class="decoration">' * - .</span> Places <span class="decoration">. - * '</span></a>
+          <a href="./pages/knight.html"><span class="decoration">' * - .</span> The Knight <span class="decoration">. - * '</span></a>
         </div>
+        <img class="border-bottom" src="./image/fancy-border-1.png">
       </div>
+    </div>
 
-      <div class="bg-container"></div>
+    <div class="bg-container"></div>
+    
+    <div class="intro">
+      <h1 class="title">Hollow Knight</h1>
+      <h6 class="subtitle">A legendary game.</h6>
+      <p>Hollow Knight is a game following a tiny beetle-like creature who has no name, but is frequently referred to as “the Knight.” The Knight ventures through the fallen kingdom of Hallownest, which once flourished with lively bugs, but was now in ruins after the bug became sick with “The Infection,” which is a disease that entered the bug’s minds and made them mindless and angry. Hallownest’s ruler, The Pale King, had attempted to lock away the plague in a temple, but it had managed to escape anyways. The Knight’s mission is to find and kill the three bugs called “The Dreamers,” who act as guardians for the temple. After these bugs are killed, the Knight can confront the source of the infection and end it.
+      </p>
       
-      <div class="intro">
-        <h1 class="title">Hollow Knight</h1>
-        <h6 class="subtitle">A legendary game.</h6>
-        <p>Hollow Knight is a game following a tiny beetle-like creature who has no name, but is frequently referred to as “the Knight.” The Knight ventures through the fallen kingdom of Hallownest, which once flourished with lively bugs, but was now in ruins after the bug became sick with “The Infection,” which is a disease that entered the bug’s minds and made them mindless and angry. Hallownest’s ruler, The Pale King, had attempted to lock away the plague in a temple, but it had managed to escape anyways. The Knight’s mission is to find and kill the three bugs called “The Dreamers,” who act as guardians for the temple. After these bugs are killed, the Knight can confront the source of the infection and end it.
-        </p>
+      <img class="scroll-arrow" src="./image/down-arrow.png" width="20px">
+    </div>
+
+
+
+    <div class="main">
+      <em style="font-family: 'space mono'; display: block; font-weight: 100; text-align: center; position: relative; top: -30px; font-size: 10px;">( press <strong style="font-style: normal; font-size: 12px;">M</strong> to toggle menu )</em>
+
+      <div class="section one">
+        <h3 class="accordion"><span class="dash">/</span> who made it? origin story?</h6>
+        <p class="panel">Hollow Knight was created by Team Cherry, a small Australian indie studio founded by Ari Gibson and William Pellen, originating from a 2013 "Ludum Dare" game jam theme, "Beneath the Surface". Originally conceived as a smaller game called Hungry Knight, the project grew into a sprawling 2D "Metroidvania" funded by a successful 2014 Kickstarter, officially launching in February 2017. This fascinating game tells the story of a ruined kingdom, Hallownest, plagued by a mental infection caused by an ancient god, the Radiance. To save his kingdom, the Pale King created Vessels—children born of Void and raised in the Abyss—to contain the plague. The chosen "Hollow Knight" failed to hold the infection due to an instilled emotional weakness, leading to the game's events. </p>
+      </div>
+
+      <div class="section two">
+        <h3 class="accordion"><span class="dash">/</span> characters?</h6>
+        <div class="panel"><p>Well, obviously, there’s the Knight. There’s also The Dreamers, Hornet, and numerous other creatures found in the game, such as the False Knight, the Mantis Lords, etc. Hornet is the protector of Hallownest and daughter of Herrah and the Pale King. She guides and challenges the Knight, seeking a better way to save the kingdom. Quirrel is a curious traveler associated with Monomon the Teacher. He assists the Knight in exploring Hallownest. Elderbug is the friendly, nostalgic first NPC in Dirtmouth who provides advice. Cornifer and Iselda are cartographers who map the dangerous areas, providing essential guidance. Zote the Mighty is a delusional, arrogant character who claims to be a great warrior but is weak and comedic. He's not very mighty.
+        <strong><br>Aqui tenemos un list nice que summarizado todo de esto. </strong>
+        <ul>
+          <li>the knight</li>
+          <li>the pale king</li>
+          <li>the dreamers</li>
+          <li>hornet</li>
+          <li>the false knight</li>
+          <li>the mantis lords</li>
+          <li>herrah</li>
+          <li>quirrel</li>
+          <li>elderbug</li>
+          <li>cornifer and iselda</li>
+          <li>zote the mighty</li>
+        </ul>  
+        </p></div>
+      </div>
+
+      <div class="img-grid">
+        <a href="https://www.youtube.com/watch?v=G1atkq4C1KU"><img src="./image/ascended.PNG" alt="ascended bug"></a>
+        <img src="./image/bench.PNG" alt="two little bugs sitting on a bench">
+        <img src="./image/chubby.PNG" alt="chubby bug">
+        <img src="./image/elderbug.PNG" alt="old bug called elderbug">
+        <img src="./image/floating-blob.PNG" alt="a floating robot like bug">
+        <img src="./image/flying-grandpa.PNG" alt="an old grandpa bug thats angry and flying">
+        <img src="./image/grandpa-attach.PNG" alt="an old grandpa bug attacking">
+        <img src="./image/grumpy.PNG" alt="a very very grumpy bug">
+        <img src="./image/hornet.PNG" alt="an ordinary image of hornet">
+        <img src="./image/hornet-majestic.PNG" alt="an extraordinary image of hornet">
+        <img src="./image/knight.PNG" alt="an image of the incredible knight">
+        <img src="./image/mantis.PNG" alt="the valiant mantis lords">
+        <img src="./image/shade.PNG" alt="image of the knight's shade">
+        <img src="./image/sleepy.PNG" alt="sleepy bug">
+        <img src="./image/spiky.PNG" alt="spiky mean ice bug">
+        <img src="./image/white.PNG" alt="a white bug">
+        <img src="./image/grandpa-attach.PNG" alt="an old grandpa bug attacking">
+        <img src="./image/grumpy.PNG" alt="a very very grumpy bug">
+        <img src="./image/hornet.PNG" alt="an ordinary image of hornet">
+        <img src="./image/hornet-majestic.PNG" alt="an extraordinary image of hornet">
+        <img src="./image/knight.PNG" alt="an image of the incredible knight">
+        <img src="./image/mantis.PNG" alt="the valiant mantis lords">
+        <img src="./image/bench.PNG" alt="two little bugs sitting on a bench">
+        <img src="./image/chubby.PNG" alt="chubby bug">
+      </div>
+      <p style="text-align: center; margin-top: 30px;">(ignore how some images are repeated)</p>
+    </div>
+
+    <div class="form-popup">
+      <button onclick="openForm()" class="open-button">Chat</button>
+      <form class="form-container" id="myForm">
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type here..." name="msg" required></textarea>
         
-        <img class="scroll-arrow" src="./image/down-arrow.png" width="20px">
-      </div>
+        <button type="submit">Send</button>
+        <button type="button" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    
 
-
-
-      <div class="main">
-        <em style="font-family: 'space mono'; display: block; font-weight: 100; text-align: center; position: relative; top: -30px; font-size: 10px;">( press <strong style="font-style: normal; font-size: 12px;">M</strong> to toggle menu )</em>
-
-        <div class="section one">
-          <h3 class="accordion"><span class="dash">/</span> who made it? origin story?</h6>
-          <p class="panel">Hollow Knight was created by Team Cherry, a small Australian indie studio founded by Ari Gibson and William Pellen, originating from a 2013 "Ludum Dare" game jam theme, "Beneath the Surface". Originally conceived as a smaller game called Hungry Knight, the project grew into a sprawling 2D "Metroidvania" funded by a successful 2014 Kickstarter, officially launching in February 2017. This fascinating game tells the story of a ruined kingdom, Hallownest, plagued by a mental infection caused by an ancient god, the Radiance. To save his kingdom, the Pale King created Vessels—children born of Void and raised in the Abyss—to contain the plague. The chosen "Hollow Knight" failed to hold the infection due to an instilled emotional weakness, leading to the game's events. </p>
-        </div>
-
-        <div class="section two">
-          <h3 class="accordion"><span class="dash">/</span> characters?</h6>
-          <div class="panel"><p>Well, obviously, there’s the Knight. There’s also The Dreamers, Hornet, and numerous other creatures found in the game, such as the False Knight, the Mantis Lords, etc. Hornet is the protector of Hallownest and daughter of Herrah and the Pale King. She guides and challenges the Knight, seeking a better way to save the kingdom. Quirrel is a curious traveler associated with Monomon the Teacher. He assists the Knight in exploring Hallownest. Elderbug is the friendly, nostalgic first NPC in Dirtmouth who provides advice. Cornifer and Iselda are cartographers who map the dangerous areas, providing essential guidance. Zote the Mighty is a delusional, arrogant character who claims to be a great warrior but is weak and comedic. He's not very mighty.
-          <strong><br>Aqui tenemos un list nice que summarizado todo de esto. </strong>
-          <ul>
-            <li>the knight</li>
-            <li>the pale king</li>
-            <li>the dreamers</li>
-            <li>hornet</li>
-            <li>the false knight</li>
-            <li>the mantis lords</li>
-            <li>herrah</li>
-            <li>quirrel</li>
-            <li>elderbug</li>
-            <li>cornifer and iselda</li>
-            <li>zote the mighty</li>
-          </ul>  
-          </p></div>
-        </div>
-
-      </div>
-      <div class="form-popup">
-        <button onclick="openForm()" class="open-button">Chat</button>
-        <form class="form-container" id="myForm">
-          <label for="msg"><b>Message</b></label>
-          <textarea placeholder="Type here..." name="msg" required></textarea>
-          
-          <button type="submit">Send</button>
-          <button type="button" onclick="closeForm()">Close</button>
-        </form>
-      </div>
-
-      <script>
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'm') {
-            document.querySelector('.sidebar').classList.toggle('open');
-          }
-        });
-
-        function openForm() {
-            document.getElementById("myForm").style.display = "flex";
+    <script>
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'm') {
+          document.querySelector('.sidebar').classList.toggle('open');
         }
+      });
 
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-      </script>
-      <script src="./script.js"></script>
+      function openForm() {
+          document.getElementById("myForm").style.display = "flex";
+      }
+
+      function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

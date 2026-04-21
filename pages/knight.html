@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html style="
-    --text: #d6d5e6;
-    --text-two: #fff;
-    --content-bg: #716f86;
-    --intro-bg: url(../image/Hollow-Knight-Creepy-NPC-6.avif); /*change this!!*/
+    --text: black;
+    --text-two: #202020;
+    --content-bg: #698070;
+    --intro-bg: url(../image/gray-claw-background.webp);
 "><head>
     <title>My CSF Home Page</title>
     <link rel="stylesheet" href="../pages/nav-bar.css">
     <link rel="stylesheet" href="./non-js-styles.css">
+    <style>
+      /* styles specific for the images at the bottom */
+      .img-grid {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .img-grid img {
+        width: 175px;
+        padding: 10px;
+        filter: grayscale(100%); 
+        opacity: 0.8;
+        transition: 0.2s;
+      }
+      .img-grid img:hover {
+        transform: scale(1.23);
+        opacity: 1;
+        filter: grayscale(0%);
+      }
+    </style>
   </head>
   <body>
     <div class="sidebar-container">
       <img class="sidebar-tab" src="../image/down-arrow.png">
       <div class="sidebar">
-        <img class="border-top" src="../image/fancy-border-1.png">
+        <a href="https://www.amazon.com/Collectible-Figurine-Dashboard-Ornament-Enthusiasts/dp/B0G4PYX14M/ref=sr_1_4?crid=39XJYCRXN0AR8&dib=eyJ2IjoiMSJ9.vobtpZqGxgeAGPiJEDZTRxhtoVfrGuQDjaLazuVcrbTyraEFBMJDZRcjXqo1hci9STXduOhhVYolq2DJUIT2q4oQXahG1xmLQwfmehCYnbTq1OudfftYYvDbPFotQRn2tJcSl55C6ygjjwUFfnNLV-D0-cSqE0hZHJLMmR1Cm3_vESspqFBCReLwF3Gy4q9XKyeYRx3bGYBLr0FdHn6Y4VjnpQ1P-KeuT0IcmSYS9uY.gTM-_yRxUqaTl7H5skZaS04bZxBdgSI-R4vNElIzinA&dib_tag=se&keywords=hollow%2Bknight&qid=1776353691&sprefix=hollow%2Bknight%2Caps%2C181&sr=8-4&th=1" rel="noreferrer noopener"><img class="border-top" src="../image/fancy-border-1.png"></a>
         <div class="links">
           <a href="../index.html"><span class="decoration">' * - .</span> Home <span class="decoration">. - * '</span></a>
           <a href="../pages/team-info.html"><span class="decoration">' * - .</span> Team Info <span class="decoration">. - * '</span></a>
@@ -25,13 +46,53 @@
       </div>
     </div>
 
-    <div class="bg-container"></div>
+    <div class="bg-container" style="filter: blur(3px); transform: scale(1.1);"></div>
 
     <div class="intro">
       <h1 class="title">The Knight</h1>
-      <h6 class="subtitle">The savior.<br>The hero.</h6>
-      <p>The Knight from Hollow Knight is a silent, enigmatic wanderer who emerges from the shadows to explore the fallen kingdom of Hallownest. Small and unassuming in appearance, it wields a nail as both weapon and tool, carving a path through haunting ruins filled with forgotten lore and lingering corruption. Despite its lack of voice or overt emotion, the Knight’s journey reveals a quiet resilience and purpose tied deeply to the kingdom’s fate. As it descend further into darkness, it uncovers truths about sacrifice, identity, and the fragile boundary between containment and ruin.
-      </p>
+      <h6 class="subtitle">The hero.</h6>
+      <p>The Knight from Hollow Knight is a silent, enigmatic wanderer who emerges from the shadows to explore the fallen kingdom of Hallownest. Small and unassuming in appearance, it wields a nail as both weapon and tool, carving a path through haunting ruins filled with forgotten lore and lingering corruption. Despite its lack of voice or overt emotion, the Knight’s journey reveals a quiet resilience and purpose tied deeply to the kingdom’s fate. As it descend further into darkness, it uncovers truths about sacrifice, identity, and the fragile boundary between containment and ruin.</p>
+    </div>
+
+    <div class="main">
+      <em style="font-family: 'space mono'; display: block; font-weight: 100; text-align: center; position: relative; top: -30px; font-size: 10px;">( press <strong style="font-style: normal; font-size: 12px;">M</strong> to toggle menu )</em>
+
+      <div class="section one">
+        <h3>/ who?</h3>
+        <p>The main character of Hollow Knight is the silent, playable protagonist known simply as the Knight. While players initially control this small, masked wanderer without knowing its history, the story reveals that the Knight is a Vessel—a being constructed from the Pale King’s lineage and the dark essence of the Void. Unlike the NPC "Hollow Knight," who was selected and raised to save the kingdom, the Knight was an accidental survivor of a mass abandonment in the Abyss. Driven by a silent purpose, the Knight returns to the ruins of Hallownest to navigate its dangers, gather power through Charms and spells, and ultimately decide the fate of the world by confronting the infection at its core.</p>
+      </div>
+      <div class="section one">
+        <h3>/ what does bro do?</h3>
+        <p>In Hollow Knight, the Knight's primary role is to explore the ruined kingdom of Hallownest to uncover its history and ultimately deal with the source of a magical infection. Mechanically, the Knight fights enemies using a sword-like weapon called a Nail and harnesses SOUL from defeated foes to either heal their own shell or cast powerful offensive spells. As a Metroidvania protagonist, the Knight also continuously gains new movement and combat abilities—such as dashing, wall-climbing, and double-jumping—which allow them to access previously unreachable areas. Their overarching goal is to locate and defeat the three Dreamers to break the seals on the Temple of the Black Egg, leading to a final confrontation that decides the fate of the entire kingdom.</p>
+      </div>
+      
+      <div class="img-grid">
+        <a href="https://www.youtube.com/watch?v=G1atkq4C1KU"><img src="../image/ascended.PNG" alt="ascended bug"></a>
+        <img src="../image/bench.PNG" alt="two little bugs sitting on a bench">
+        <img src="../image/chubby.PNG" alt="chubby bug">
+        <img src="../image/elderbug.PNG" alt="old bug called elderbug">
+        <img src="../image/floating-blob.PNG" alt="a floating robot like bug">
+        <img src="../image/flying-grandpa.PNG" alt="an old grandpa bug thats angry and flying">
+        <img src="../image/grandpa-attach.PNG" alt="an old grandpa bug attacking">
+        <img src="../image/grumpy.PNG" alt="a very very grumpy bug">
+        <img src="../image/hornet.PNG" alt="an ordinary image of hornet">
+        <img src="../image/hornet-majestic.PNG" alt="an extraordinary image of hornet">
+        <img src="../image/knight.PNG" alt="an image of the incredible knight">
+        <img src="../image/mantis.PNG" alt="the valiant mantis lords">
+        <img src="../image/shade.PNG" alt="image of the knight's shade">
+        <img src="../image/sleepy.PNG" alt="sleepy bug">
+        <img src="../image/spiky.PNG" alt="spiky mean ice bug">
+        <img src="../image/white.PNG" alt="a white bug">
+        <img src="../image/grandpa-attach.PNG" alt="an old grandpa bug attacking">
+        <img src="../image/grumpy.PNG" alt="a very very grumpy bug">
+        <img src="../image/hornet.PNG" alt="an ordinary image of hornet">
+        <img src="../image/hornet-majestic.PNG" alt="an extraordinary image of hornet">
+        <img src="../image/knight.PNG" alt="an image of the incredible knight">
+        <img src="../image/mantis.PNG" alt="the valiant mantis lords">
+        <img src="../image/bench.PNG" alt="two little bugs sitting on a bench">
+        <img src="../image/chubby.PNG" alt="chubby bug">
+      </div>
+      <p style="text-align: center; margin-top: 30px;">(ignore how some images are repeated)</p>
     </div>
 
     <script>
